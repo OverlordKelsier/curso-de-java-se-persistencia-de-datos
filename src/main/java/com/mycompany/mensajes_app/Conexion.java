@@ -15,12 +15,12 @@ import java.sql.SQLException;
  */
 public class Conexion {
     
-    public Connection get_connection(){
+    public Connection getConnection(){
         Connection conection = null;
         try {
             conection = DriverManager.getConnection("jdbc:mysql://localhost:3306/mensajes_app","root","");
             if (conection != null){
-                System.out.println("Conexion exitosa");
+               // System.out.println("Conexion exitosa");
             }
         }catch (SQLException e){
             System.out.println(e);
