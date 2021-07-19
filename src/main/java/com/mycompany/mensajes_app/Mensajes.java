@@ -10,27 +10,28 @@ package com.mycompany.mensajes_app;
  * @author OVERLORD
  */
 public class Mensajes {
-    int idMensaje;
+    int id_mensaje;
     String mensaje;
-    String autorMensaje;
-    String fechaMensaje;
+    String autor_mensaje;
+    String fecha_mensaje;
     
     public Mensajes(){
         
     }
 
-    public Mensajes(String mensaje, String autorMensaje, String fechaMensaje) {
+    public Mensajes(String mensaje, String autor_mensaje, String fecha_mensaje) {
         this.mensaje = mensaje;
-        this.autorMensaje = autorMensaje;
-        this.fechaMensaje = fechaMensaje;
+        this.autor_mensaje = autor_mensaje;
+        this.fecha_mensaje = fecha_mensaje;
+    }
+    
+
+    public int getId_mensaje() {
+        return id_mensaje;
     }
 
-    public int getIdMensaje() {
-        return idMensaje;
-    }
-
-    public void setIdMensaje(int idMensaje) {
-        this.idMensaje = idMensaje;
+    public void setId_mensaje(int id_mensaje) {
+        this.id_mensaje = id_mensaje;
     }
 
     public String getMensaje() {
@@ -41,21 +42,22 @@ public class Mensajes {
         this.mensaje = mensaje;
     }
 
-    public String getAutorMensaje() {
-        return autorMensaje;
+    public String getAutor_mensaje() {
+        return autor_mensaje;
     }
 
-    public void setAutorMensaje(String autorMensaje) {
-        this.autorMensaje = autorMensaje;
+    public void setAutor_mensaje(String autor_mensaje) {
+        this.autor_mensaje = autor_mensaje;
     }
 
-    public String getFechaMensaje() {
-        return fechaMensaje;
+    public String getFecha_mensaje() {
+        return fecha_mensaje;
     }
 
-    public void setFechaMensaje(String fechaMensaje) {
-        this.fechaMensaje = fechaMensaje;
+    public void setFecha_mensaje(String fecha_mensaje) {
+        this.fecha_mensaje = fecha_mensaje;
     }
+
     
     
 }
